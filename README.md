@@ -9,6 +9,9 @@ own `goal` section that runs the demo by itself. You can edit one number
 or name in a file and run it again for the examiner's variation; see
 [docs/EXAMINER_VARIATIONS.md](docs/EXAMINER_VARIATIONS.md).
 
+Watch This video for Setup Guide
+[![Watch the video](https://drive.google.com/thumbnail?id=1wa-sR1ihq7bdVwgV2fhC3w5HD45C7OZ9&sz=w1000)](https://drive.google.com/file/d/1wa-sR1ihq7bdVwgV2fhC3w5HD45C7OZ9/view)
+
 ## What's in this repo
 
 | # | File | Experiment | What it does |
