@@ -33,7 +33,43 @@ Guides:
 
 - [docs/HOW_TO_RUN.md](docs/HOW_TO_RUN.md) — full run instructions and expected outputs
 - [docs/EXAMINER_VARIATIONS.md](docs/EXAMINER_VARIATIONS.md) — the exact one-line edit for each examiner variation, and the 3 variations that need new code, not just a changed number
-- [docs/setup-guide.mp4](docs/setup-guide.mp4) — video guide (5:37): download DOSBox, install it, set up Turbo Prolog, mount the folder, and load/compile/run a file
+- [docs/LAB_CODES_NOTES.md](docs/LAB_CODES_NOTES.md) — notes on the lab codes below: test results, and 4 things to fix before the exam
+- Setup video — see the "Watch This video for Setup Guide" Drive link at the top of this README (5:37): download DOSBox, install it, set up Turbo Prolog, mount the folder, and load/compile/run a file
+
+## Lab codes from the zip (Python + definition-only Prolog)
+
+These are the codes from `aisc_lab_codes_0_cf1x.zip`, added verbatim
+with their original filenames. They do **not** replace the
+self-running Turbo Prolog files in `experiments/` above — those are
+still the complete demos. See
+[docs/LAB_CODES_NOTES.md](docs/LAB_CODES_NOTES.md) for test results
+and the fixes needed before the exam.
+
+| Experiment | Python version | Lab-Prolog version |
+|---|---|---|
+| 1 Water Jug | [python/exp1_water_jug_dfid.py](python/exp1_water_jug_dfid.py) | — |
+| 2 8-Puzzle | [python/8puzzle.py](python/8puzzle.py) | — |
+| 3 Min-Max + Alpha-Beta | [python/exp3_minimax_alphabeta.py](python/exp3_minimax_alphabeta.py) | — |
+| 4 Perceptron | [python/perceptron.py](python/perceptron.py) | — |
+| 5 List Processing | — | [lab-prolog/exp5.pro](lab-prolog/exp5.pro) |
+| 6 Kohonen + LVQ | [python/exp6_kohonen_lvq.py](python/exp6_kohonen_lvq.py) | — |
+| 7 Kinship | — | [lab-prolog/exp7.pro](lab-prolog/exp7.pro) |
+| 8 Hopfield | [python/hopfield.py](python/hopfield.py) | — |
+| 9 Mamdani Fuzzy | [python/mamdaniFuzzy.py](python/mamdaniFuzzy.py) | — |
+| 10 Genetic Algorithm | [python/exp10_genetic_algorithm.py](python/exp10_genetic_algorithm.py) | — |
+| 11 Food inference | — | [lab-prolog/exp11.pro](lab-prolog/exp11.pro) |
+| 12 Family inference | — | [lab-prolog/exp12.pro](lab-prolog/exp12.pro) |
+
+Run a Python file with `python3 python/<file>.py` (Exp 6 and 10 need
+`numpy` and `matplotlib`). The lab-Prolog files have no `goal`
+section, so load them in Turbo Prolog and fire the queries by hand —
+examples are in `docs/LAB_CODES_NOTES.md`.
+
+**Read the notes before the exam.** In particular: the Python
+perceptron's XOR target is actually XNOR, the lab-Prolog kinship
+`grandchild` rule is written backwards, the fuzzy Python file only
+does fuzzification (no rules or defuzzification), and the Python
+8-puzzle uses a different start/goal from the exam paper.
 
 ## What you need
 
@@ -136,7 +172,7 @@ print the plot data, so draw the plot by hand from the printed output:
 - Exp 9: sweep points printed ("plot these points").
 - Exp 10: best + average fitness per generation printed.
 
-No file in this repo makes a plot file — do not claim one exists.
+No Prolog file in this repo makes a plot file — do not claim one exists. (The Python Exp 6 file does save `som_plot.png` when run, and Python Exp 10 shows a convergence plot.)
 
 ## Verification status — read this before the exam
 
@@ -154,6 +190,6 @@ can be fixed from it.
 - DOSBox — https://www.dosbox.com
 - Turbo Prolog 2.0 binary used in the setup video —
   [lifaet/Prolog-Binary](https://github.com/lifaet/Prolog-Binary)
-- Setup video in this repo (`docs/setup-guide.mp4`) shows the
+- Setup video (Drive link at the top of this README) shows the
   DOSBox install, the Prolog-Binary download, the `TPROLOG` folder,
   the DOSBox mount commands, and load → compile (F9) → run.
