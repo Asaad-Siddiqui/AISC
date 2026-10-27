@@ -9,6 +9,23 @@ own `goal` section that runs the demo by itself. You can edit one number
 or name in a file and run it again for the examiner's variation; see
 [docs/EXAMINER_VARIATIONS.md](docs/EXAMINER_VARIATIONS.md).
 
+## ▶ Watch the setup first — video preview
+
+Click the preview to watch the full video (5:37):
+
+[![Setup guide preview — click to watch the full video](docs/setup-guide-thumbnail.png)](docs/setup-guide.mp4)
+
+Animated preview (15 seconds, from the DOSBox mount step — click it for
+the full video):
+
+[![Setup guide preview — animated, click to watch the full video](docs/setup-guide-preview.gif)](docs/setup-guide.mp4)
+
+The full video shows: download DOSBox, install it, set up Turbo Prolog
+from Prolog-Binary, make the `TPROLOG` folder, mount it in DOSBox, and
+load / compile (F9) / run a file. GitHub does not play a repo MP4 inline
+in a README, so the animated preview above is what plays here — clicking
+it opens the full `docs/setup-guide.mp4`.
+
 ## What's in this repo
 
 | # | File | Experiment | What it does |
@@ -30,7 +47,7 @@ Guides:
 
 - [docs/HOW_TO_RUN.md](docs/HOW_TO_RUN.md) — full run instructions and expected outputs
 - [docs/EXAMINER_VARIATIONS.md](docs/EXAMINER_VARIATIONS.md) — the exact one-line edit for each examiner variation, and the 3 variations that need new code, not just a changed number
-- [docs/setup-guide.mp4](docs/setup-guide.mp4) — video guide (5:37): download DOSBox, install it, set up Turbo Prolog, mount the folder, and load/compile/run a file
+- [docs/setup-guide.mp4](docs/setup-guide.mp4) — video guide (5:37): download DOSBox, install it, set up Turbo Prolog, mount the folder, and load/compile/run a file. Preview files: [docs/setup-guide-thumbnail.png](docs/setup-guide-thumbnail.png) (clickable thumbnail, above) and [docs/setup-guide-preview.gif](docs/setup-guide-preview.gif) (animated preview)
 
 ## What you need
 
