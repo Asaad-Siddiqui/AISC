@@ -1,6 +1,12 @@
 # Lab codes from the zip — notes, test results, and things to fix before the exam
 
-The files in `python/` and `lab-prolog/` are the codes from
+> Note (2026-10-28, user request): this repo is now Prolog only.
+> The `python/` files from the zip were removed from the repo, and
+> `experiments/` was kept exactly as it was. The Python test results
+> below are kept here for reference only — the Python files themselves
+> are no longer in the repo.
+
+The files in `lab-prolog/` are the Prolog codes from
 `aisc_lab_codes_0_cf1x.zip`, added verbatim (original filenames kept).
 They are **additional** versions — they do **not** replace the
 self-running Turbo Prolog files in `experiments/`, which are still the
