@@ -107,3 +107,44 @@ folder, not just the `.EXE` on its own.
    ```
 5. In Turbo Prolog, go to Files, Load the `.pro` file, then
    Compile (F9), then Run.
+
+## Substitute languages (Java and C, offline)
+
+The 8 Python programs in `lab-experiments/` are also written in
+Java and C, in [substitute-languages/](substitute-languages/).
+These are optional alternatives to the Python versions — use them
+if Python, numpy or matplotlib are not available, or if there is
+no internet to install them. Both versions use only their standard
+library, so nothing needs to be downloaded.
+
+| Python file | Java file | C file |
+|---|---|---|
+| `exp1_water_jug_dfid.py` | `java/WaterJugDFID.java` | `c/exp1_water_jug_dfid.c` |
+| `8puzzle.py` | `java/EightPuzzle.java` | `c/8puzzle.c` |
+| `exp3_minimax_alphabeta.py` | `java/MinimaxAlphaBeta.java` | `c/exp3_minimax_alphabeta.c` |
+| `perceptron.py` | `java/Perceptron.java` | `c/perceptron.c` |
+| `exp6_kohonen_lvq.py` | `java/KohonenLVQ.java` | `c/exp6_kohonen_lvq.c` |
+| `hopfield.py` | `java/Hopfield.java` | `c/hopfield.c` |
+| `mamdaniFuzzy.py` | `java/MamdaniFuzzy.java` | `c/mamdaniFuzzy.c` |
+| `exp10_genetic_algorithm.py` | `java/GeneticAlgorithm.java` | `c/exp10_genetic_algorithm.c` |
+
+Java (no Maven, no downloads):
+
+```
+javac substitute-languages/java/WaterJugDFID.java
+java -cp substitute-languages/java WaterJugDFID
+```
+
+C (no external libraries, only `-lm`):
+
+```
+gcc -O2 -o waterjug substitute-languages/c/exp1_water_jug_dfid.c -lm
+./waterjug
+```
+
+The plots from the Python versions are printed as numbers instead
+(final SOM weights, LVQ accuracy, GA best/average fitness), and the
+random programs use fixed seeds, so the random points in Exp 6
+Parts 2–3 and the GA populations differ from a numpy/Python run —
+the algorithms, parameters and final results (for example LVQ
+100%, GA best 11111 / 961) are the same.
