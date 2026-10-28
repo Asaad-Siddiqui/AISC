@@ -1,5 +1,10 @@
 # AISC — Lab Experiments
 
+Watch This video for Setup Guide
+[![Watch the video](https://drive.google.com/thumbnail?id=1wa-sR1ihq7bdVwgV2fhC3w5HD45C7OZ9&sz=w1000)](https://drive.google.com/file/d/1wa-sR1ihq7bdVwgV2fhC3w5HD45C7OZ9/view)
+
+Click the preview above to watch how to run Prolog: download and install DOSBox, set up Turbo Prolog, mount the folder, and load, compile and run a file.
+
 ## Table of Contents
 
 | # | File | Experiment |
