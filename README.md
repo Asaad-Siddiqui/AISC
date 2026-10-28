@@ -81,3 +81,29 @@ pip install numpy matplotlib
 `exp6_kohonen_lvq.py` saves `som_plot.png` in the folder you run it
 from and shows a plot. `exp10_genetic_algorithm.py` shows a
 convergence plot.
+
+## Install Turbo Prolog (Prolog Binary)
+
+The Prolog compiler itself is in this repo, in
+[prolog-binary/](prolog-binary/). It is Turbo Prolog 2.0, from
+https://github.com/lifaet/Prolog-Binary — the same source used in
+the setup video at the top. See the `LICENSE` file in that folder.
+The main files are `PROLOG.EXE` and `PROLOG.OVL`; copy the whole
+folder, not just the `.EXE` on its own.
+
+1. Download this repo (or just the `prolog-binary/` folder) and
+   copy all its files to a folder on Windows, for example
+   `C:\Prolog`.
+2. Copy the `.pro` file you want to run from `lab-experiments/`
+   into that same folder.
+3. Download and install DOSBox from
+   https://www.dosbox.com/download.php?main=1
+   (or follow the setup video at the top of this README).
+4. Open DOSBox and type:
+   ```
+   MOUNT c "C:\Prolog"
+   c:
+   PROLOG.EXE
+   ```
+5. In Turbo Prolog, go to Files, Load the `.pro` file, then
+   Compile (F9), then Run.
